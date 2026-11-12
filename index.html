@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-state="loading">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dimple Pawa | Portfolio</title>
+  <meta name="description" content="Portfolio of Dimple Pawa - Frontend Developer.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/png" href="assets/img/dino.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <noscript><style>.anim{animation:none!important}#loader{display:none}html{overflow:auto!important}#site{visibility:visible!important}#start{display:none}</style></noscript>
+</head>
+<body>
+
+  <!-- ============ 1. LOADING PAGE ============ -->
+  <div id="loader" role="status" aria-live="polite" aria-label="Loading">
+    <div class="loader-inner">
+      <img class="hourglass" src="assets/img/sandclock.png" alt="" width="215" height="262">
+      <p class="loader-text">LOADING <span class="dots" aria-hidden="true">....</span></p>
+    </div>
+  </div>
+
+  <!-- ============ 2. START PAGE ============ -->
+  <div id="start" class="screen">
+    <div class="world" aria-hidden="true"><div class="grass"></div><div class="ground"></div></div>
+    <div class="stage">
+      <img class="abs character px" src="assets/img/character.png" alt="Pixel avatar of Dimple" style="--x:83;--y:384;--w:243">
+      <div class="abs start-wrap" style="--x:499;--y:225;--w:367">
+        <img class="dino px" src="assets/img/dino.png" alt="" aria-hidden="true">
+        <button id="start-btn" class="start-btn" type="button" aria-label="Start">
+          <img class="px" src="assets/img/start-button.png" alt="Start" width="365" height="101">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ NAV BAR ============ -->
+  <header id="nav" aria-label="Main navigation">
+    <button id="menu-btn" class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <img class="px" src="assets/img/menu-button.png" alt="">
+    </button>
+    <span id="nav-current" aria-hidden="true">HOME</span>
+    <ul id="nav-links">
+      <li data-for="home"><a href="#home">HOME</a></li>
+      <li data-for="about"><a href="#about">ABOUT</a></li>
+      <li data-for="projects"><a href="#projects">PROJECTS</a></li>
+      <li data-for="skills"><a href="#skills">SKILLS</a></li>
+      <li data-for="contact"><a href="#contact">CONTACT</a></li>
+    </ul>
+  </header>
+
+  <main id="site">
+
+    <!-- ============ 3. HOME ============ -->
+    <section id="home" class="page" data-label="HOME" aria-label="Home">
+      <div class="world" aria-hidden="true"><div class="grass"></div><div class="ground"></div></div>
+      <div class="stage">
+
+        <div class="abs anim a-drop scroll-wrap" style="--x:286;--y:76;--w:429">
+          <img class="px float" src="assets/img/scroll.png" alt="Hello, World! Mission: develop thoughtful, interesting and user friendly designs. Status: ready to explore, build and win.">
+        </div>
+
+        <div class="abs anim a-pop hud" style="--x:1107;--y:300;--w:192" role="img" aria-label="Health bar">
+          <img class="px" src="assets/img/life-meter.png" alt="">
+          <span class="fill" aria-hidden="true"></span>
+        </div>
+
+        <dl class="abs player" style="--x:640;--y:337;--w:660">
+          <div class="row anim a-type" style="--delay:.5s"><dt>PLAYER:</dt><dd>DIMPLE PAWA</dd></div>
+          <div class="row anim a-type" style="--delay:1s"><dt>ROLE:</dt><dd>FRONTEND DEVELOPER</dd></div>
+        </dl>
+
+        <button id="resume-btn" class="abs anim a-pop resume-btn" type="button" style="--x:1105;--y:427;--w:197;--delay:1.4s" aria-haspopup="dialog" aria-label="View resume">
+          <img class="px" src="assets/img/resume-button.png" alt="Resume">
+        </button>
+
+        <button class="abs pointer back-btn" type="button" style="--x:17;--y:427;--w:92" aria-label="Go back">
+          <img class="px" src="assets/img/pointer.png" alt="">
+        </button>
+        <img class="abs character px" src="assets/img/character.png" alt="" aria-hidden="true" style="--x:77;--y:384;--w:243">
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="page" data-label="ABOUT" aria-label="About me">
+      <div class="world" aria-hidden="true"><div class="grass"></div><div class="ground"></div></div>
+      <div class="stage">
+
+        <div class="abs anim a-pop board about-board" style="--x:478;--y:91;--w:737">
+          <img class="px" src="assets/img/about-board.png" alt="">
+          <h2 class="pill">ABOUT ME</h2>
+          <div class="about-text" id="about-text">
+            <p>Hello there,<br>I am aspiring Frontend Developer. Innovation, structure, and continuous learning drive my journey in tech.</p>
+            <p>I am a driven developer and creative thinker focused on building robust web projects and seamless user experiences.</p>
+          </div>
+          <a class="social gh" href="https://github.com/Shxxt1ns7xr" target="_blank" rel="noopener noreferrer" aria-label="Dimple Pawa on GitHub" title="GitHub">
+            <img src="assets/img/github.png" alt="GitHub">
+          </a>
+          <a class="social li" href="https://www.linkedin.com/in/dimple-pawa-7531dp" target="_blank" rel="noopener noreferrer" aria-label="Dimple Pawa on LinkedIn" title="LinkedIn">
+            <img src="assets/img/linkedin.png" alt="LinkedIn">
+          </a>
+        </div>
+
+        <button class="abs pointer back-btn" type="button" style="--x:17;--y:427;--w:92" aria-label="Go back">
+          <img class="px" src="assets/img/pointer.png" alt="">
+        </button>
+        <img class="abs character px" src="assets/img/character.png" alt="" aria-hidden="true" style="--x:77;--y:384;--w:243">
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="page" data-label="PROJECTS" aria-label="Projects">
+      <div class="world" aria-hidden="true"><div class="grass"></div><div class="ground"></div></div>
+      <div class="stage">
+
+        <div class="abs projects-grid" style="--x:326;--y:104;--w:1020">
+
+          <article class="card anim a-pop" style="--delay:.1s">
+            <i class="c c1"></i><i class="c c2"></i><i class="c c3"></i><i class="c c4"></i>
+            <p class="level">LEVEL 01</p>
+            <h3>WAREHOUSE MANAGEMENT SYSTEM</h3>
+            <ul class="chips" aria-label="Tech stack"><li>JAVA</li><li>MAVEN</li><li>MYSQL</li><li>JSON</li><li>LOGBACK</li></ul>
+            <p class="desc">Inventory, stock monitoring, supplier and purchase / sales management with an inventory alert system and dashboards for visual analytics.</p>
+            <div class="links">
+              <a class="px-btn red" href="https://warehousemanagement-with-web.onrender.com/" target="_blank" rel="noopener noreferrer">LIVE DEMO</a>
+              <a class="px-btn green" href="https://github.com/Shxxt1ns7xr/WarehouseManagement/tree/main" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            </div>
+          </article>
+
+          <article class="card anim a-pop" style="--delay:.3s">
+            <i class="c c1"></i><i class="c c2"></i><i class="c c3"></i><i class="c c4"></i>
+            <p class="level">LEVEL 02</p>
+            <h3>SPACE GAME</h3>
+            <ul class="chips" aria-label="Tech stack"><li>HTML5 CANVAS</li><li>JAVASCRIPT</li><li>CSS3</li></ul>
+            <p class="desc">A fast-paced, canvas-based space shooter with a live HUD, customizable settings and a leaderboard. Playable right in the browser.</p>
+            <div class="links">
+              <a class="px-btn red" href="https://spacegame-6swo.onrender.com/" target="_blank" rel="noopener noreferrer">LIVE DEMO</a>
+              <a class="px-btn green" href="https://github.com/Shxxt1ns7xr/Spacegame" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            </div>
+          </article>
+
+          <article class="card anim a-pop" style="--delay:.5s">
+            <i class="c c1"></i><i class="c c2"></i><i class="c c3"></i><i class="c c4"></i>
+            <p class="level">LEVEL 03</p>
+            <h3>WINX</h3>
+            <ul class="chips" aria-label="Tech stack"><li>HTML</li><li>CSS</li><li>JAVASCRIPT</li><li>GSAP</li><li>WEB AUDIO</li></ul>
+            <p class="desc">An unofficial fan tribute site for the six Winx Club fairies (Seasons 1 to 3) with GSAP ScrollTrigger scroll animations, About Me and My Powers panels, and generated magic sound.</p>
+            <div class="links">
+              <a class="px-btn red" href="https://winx-indol.vercel.app/" target="_blank" rel="noopener noreferrer">LIVE DEMO</a>
+              <a class="px-btn green" href="https://github.com/Shxxt1ns7xr/winx" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            </div>
+          </article>
+
+          <article class="card anim a-pop" style="--delay:.7s">
+            <i class="c c1"></i><i class="c c2"></i><i class="c c3"></i><i class="c c4"></i>
+            <p class="level">LEVEL 04</p>
+            <h3>VIRTUAL TERRARIUM</h3>
+            <ul class="chips" aria-label="Tech stack"><li>HTML5</li><li>CSS3</li><li>JAVASCRIPT</li></ul>
+            <p class="desc">An interactive, zen-like digital garden: design and decorate your own virtual glass terrarium by dragging plants into the jar. Built from scratch with vanilla HTML5, CSS3 and JavaScript.</p>
+            <div class="links">
+              <a class="px-btn red" href="https://terrarium-4rmc.onrender.com/" target="_blank" rel="noopener noreferrer">LIVE DEMO</a>
+              <a class="px-btn green" href="https://github.com/Shxxt1ns7xr/Terrarium" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            </div>
+          </article>
+
+        </div>
+
+        <button class="abs pointer back-btn" type="button" style="--x:17;--y:427;--w:92" aria-label="Go back">
+          <img class="px" src="assets/img/pointer.png" alt="">
+        </button>
+        <img class="abs character px" src="assets/img/character.png" alt="" aria-hidden="true" style="--x:77;--y:384;--w:243">
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="page" data-label="SKILLS" aria-label="Skills">
+      <div class="world" aria-hidden="true"><div class="grass"></div><div class="ground"></div></div>
+      <div class="stage">
+
+        <div class="skill-row">
+          <h2 class="abs skill-label" style="--x:268;--y:157;--w:300">UI/UX</h2>
+          <img class="abs skill anim a-pop" src="assets/icons/html5.svg" alt="HTML5" title="HTML5" style="--x:539;--y:115;--w:100;--h:113;--mh:50px;--delay:.05s">
+          <img class="abs skill anim a-pop" src="assets/icons/css.svg" alt="CSS" title="CSS" style="--x:670;--y:118;--w:86;--h:105;--mh:50px;--delay:.1s">
+          <img class="abs skill anim a-pop" src="assets/icons/javascript.svg" alt="JavaScript" title="JavaScript" style="--x:802;--y:123;--w:90;--h:90;--mh:46px;--delay:.15s">
+          <div class="abs skill combo bootstrap anim a-pop" title="Bootstrap" style="--x:935;--y:113;--w:202;--h:112;--mh:50px;--delay:.2s"><img src="assets/icons/bootstrap.svg" alt=""><span>Bootstrap</span></div>
+          <img class="abs skill anim a-pop" src="assets/icons/react.svg" alt="React" title="React" style="--x:1157;--y:110;--w:131;--h:118;--mh:46px;--delay:.25s">
+        </div>
+
+        <div class="skill-row">
+          <h2 class="abs skill-label" style="--x:268;--y:356;--w:300">BACKEND<br>DATABASE</h2>
+          <img class="abs skill anim a-pop" src="assets/icons/java.svg" alt="Java" title="Java" style="--x:558;--y:300;--w:62;--h:115;--mh:56px;--delay:.3s">
+          <img class="abs skill anim a-pop" src="assets/icons/springboot.svg" alt="Spring Boot" title="Spring Boot" style="--x:658;--y:307;--w:128;--h:115;--mh:52px;--delay:.35s">
+          <img class="abs skill anim a-pop" src="assets/icons/mysql.svg" alt="MySQL" title="MySQL" style="--x:812;--y:298;--w:230;--h:119;--mh:48px;--delay:.4s">
+        </div>
+
+        <div class="skill-row">
+          <h2 class="abs skill-label" style="--x:268;--y:524;--w:300">TOOLS<br>PLATFORMS</h2>
+          <img class="abs skill anim a-pop" src="assets/icons/visualstudio.svg" alt="Visual Studio" title="Visual Studio" style="--x:551;--y:500;--w:102;--h:102;--mh:48px;--delay:.45s">
+          <img class="abs skill anim a-pop" src="assets/icons/canva.svg" alt="Canva" title="Canva" style="--x:666;--y:496;--w:111;--h:111;--mh:48px;--delay:.5s">
+          <img class="abs skill anim a-pop" src="assets/icons/intellij.svg" alt="IntelliJ IDEA" title="IntelliJ IDEA" style="--x:792;--y:512;--w:96;--h:95;--mh:48px;--delay:.55s">
+          <img class="abs skill anim a-pop" src="assets/icons/github-skill.svg" alt="GitHub" title="GitHub" style="--x:905;--y:500;--w:103;--h:103;--mh:48px;--delay:.6s">
+          <div class="abs skill combo claude anim a-pop" title="Claude" style="--x:1027;--y:485;--w:180;--h:37;--mh:34px;--delay:.65s"><img class="mark" src="assets/icons/claude-mark.svg" alt=""><img class="word" src="assets/icons/claude-text.svg" alt="Claude"></div>
+          <img class="abs skill anim a-pop" src="assets/icons/unity.svg" alt="Unity" title="Unity" style="--x:1027;--y:536;--w:202;--h:70;--mh:40px;--delay:.7s">
+        </div>
+
+        <button class="abs pointer back-btn" type="button" style="--x:17;--y:427;--w:92" aria-label="Go back">
+          <img class="px" src="assets/img/pointer.png" alt="">
+        </button>
+        <img class="abs character px" src="assets/img/character.png" alt="" aria-hidden="true" style="--x:77;--y:384;--w:243">
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="page" data-label="CONTACT" aria-label="Contact">
+      <div class="world" aria-hidden="true"><div class="grass"></div><div class="ground"></div></div>
+      <div class="stage">
+
+        <div class="abs anim a-pop board contact-board" style="--x:329;--y:145;--w:969">
+          <img class="px board-img" src="assets/img/contact-board.png" alt="">
+          <h2 class="reach"><span>REACH ME</span></h2>
+
+          <a class="crow phone" href="tel:+917087690956">
+            <span class="ico"><img src="assets/icons/phone.svg" alt=""></span>
+            <span class="txt">+91 7087690956</span>
+          </a>
+          <a class="crow mail" href="mailto:dimplepawa7531@gmail.com">
+            <span class="ico"><img src="assets/icons/envelope.svg" alt=""></span>
+            <span class="txt">dimplepawa7531@gmail.com</span>
+          </a>
+          <a class="crow lin" href="https://www.linkedin.com/in/dimple-pawa-7531dp" target="_blank" rel="noopener noreferrer">
+            <span class="ico"><img src="assets/img/linkedin.png" alt=""></span>
+            <span class="txt small"><span>www.linkedin.com/in</span><span>/dimple-pawa-7531dp</span></span>
+          </a>
+        </div>
+
+        <button class="abs pointer back-btn" type="button" style="--x:17;--y:427;--w:92" aria-label="Go back">
+          <img class="px" src="assets/img/pointer.png" alt="">
+        </button>
+        <img class="abs character px" src="assets/img/character.png" alt="" aria-hidden="true" style="--x:77;--y:384;--w:243">
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ RESUME VIEWER ============ -->
+  <div id="resume-modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="resume-title">
+      <div class="modal-bar">
+        <span id="resume-title">RESUME.PDF</span>
+        <button type="button" class="modal-x" data-close aria-label="Close resume">X</button>
+      </div>
+      <div class="modal-body">
+        <div class="resume-scroll" tabindex="0" aria-label="Resume preview (scrollable)">
+          <img id="resume-img" data-src="assets/docs/resume-preview.png" alt="Dimple Pawa - Resume: aspiring Frontend Developer with Java full stack experience. Education: B.Tech CSE, Lamrin Tech Skills University, CGPA 8.3. Projects: Warehouse Management System, Space Game, Winx, Virtual Terrarium." width="1406" height="1988">
+        </div>
+        <p class="modal-note">Prefer the real PDF? <a href="assets/docs/Resume_Dimple_Pawa.pdf" target="_blank" rel="noopener">Open it in a new tab</a> or use Download.</p>
+      </div>
+      <div class="modal-actions">
+        <a class="px-btn red" id="resume-download" href="assets/docs/Resume_Dimple_Pawa.pdf" download="Dimple_Pawa_Resume.pdf">DOWNLOAD</a>
+        <button type="button" class="px-btn green" data-close>CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
